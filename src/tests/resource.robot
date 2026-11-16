@@ -9,6 +9,10 @@ ${BROWSER}   chromium
 ${HEADLESS}  false
 
 *** Keywords ***
+Reset Counter
+    Go To  ${HOME_URL}
+    Click  button >> text=Nollaa
+
 Open And Configure Browser
     IF  $HEADLESS == 'true'
         New Browser  browser=${BROWSER}  headless=True

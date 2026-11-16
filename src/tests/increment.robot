@@ -2,6 +2,7 @@
 Resource  resource.robot
 Suite Setup  Open And Configure Browser
 Suite Teardown  Close Browser
+Test Setup  Reset Counter
 
 *** Test Cases ***
 At start the counter is zero
@@ -14,4 +15,3 @@ When button pressed twice the counter is two
     Click  button >> text=Paina
     Click  button >> text=Paina
     Get Text  body  *=  nappia painettu 2 kertaa
-
